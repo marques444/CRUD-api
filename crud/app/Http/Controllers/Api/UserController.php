@@ -73,6 +73,7 @@ class UserController extends Controller
         try{
             //Editar o usuário no banco de dados
             $user->update([
+                'id'=> $request->id,
                 'name' => $request->name,
                 'email' => $request->email,
                 'password'=> $request->password,
